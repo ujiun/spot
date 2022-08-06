@@ -15,7 +15,7 @@ a {text-decoration: none;}
 .clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
 .clearfix:after {clear: both;}
 #wrap {
-	width: 1440px;
+	width: 1920px;
 	margin: 0px auto;
 }
 #wrap > #header {

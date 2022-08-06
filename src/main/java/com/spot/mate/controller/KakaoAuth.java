@@ -28,6 +28,7 @@ public class KakaoAuth {
 		System.out.println("###email#### : " + userInfo.get("email"));
         
 		return "kakao";
+		
     	}
 	
 	@RequestMapping("/jskakao")

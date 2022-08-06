@@ -11,7 +11,7 @@
 </head>
 <body>
 <div id="wrap"  class="clearfix">
-<c:import url="/WEB-INF/views/includes/nav.jsp"></c:import>
+<c:import url="/WEB-INF/views/includes/header.jsp"></c:import>
 <div id="subHeader" class="clearfix">
 	<ul id="subNav">
 		<li><a href="#">PRODUCT</a></li>

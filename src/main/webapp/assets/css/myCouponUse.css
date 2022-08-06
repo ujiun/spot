@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*************************myPointUse**************************/
+
+/*쿠폰 사용처*/
+.myPage_couponUse {
+	width: 850x;
+	height: 100%;
+	border: 1px solid green;
+	margin: 0px 90px 0px 90px;
+	text-align: center;
+}
+
+
+/*쿠폰 이미지*/
+.myPage_coupon {
+	width: 366px;
+	height: 230px;
+	background: url(/assets/images/soil_3.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	display: inline-block;
+	margin: 20px;
+}
+
+/*쿠폰설명*/
+.myPage_couponEx {
+	
+}
+
+/*지도찾기*/
+
+
+/*지도이미지*/
+
+
+/*주소*/
+
+
+/*교환버튼*/

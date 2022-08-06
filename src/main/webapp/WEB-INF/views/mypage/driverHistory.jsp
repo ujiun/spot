@@ -5,7 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <script type="text/javascript" src="./assets/js/jquery-1.12.4.js"></script>
-<link rel="stylesheet" href="/assets/css/spotmate.css">
+<link rel="stylesheet" href="/assets/css/spotMateMain.css">
+<link rel="stylesheet" href="/assets/css/driverMain.css">
+
 <title>Insert title here</title>
 </head>
 <body>
