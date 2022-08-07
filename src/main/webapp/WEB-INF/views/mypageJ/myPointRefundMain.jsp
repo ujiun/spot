@@ -90,7 +90,6 @@
 								<option value="2">히치하이크</option>
 								<option value="3">메이트</option>
 								<option value="4">카풀1회성</option>
-								<option value="5"><span style="color: red">패널티</span></option>
 							</select>
 
 							<!-- <label for="lecture">참여주체</label> -->
