@@ -27,30 +27,41 @@
 		<!-- //topNav -->
 		<nav class="myPage_topNav">
 			<div class="box1">
-				<h2>yujieun님</h2>
+				<div class="box1_box">
+					<img src="/assets/images/box_user.png">
+				</div>
+				<p>yujieun님</p>
+				<span>Reviews</span><span><img src="/assets/images/ico_star.png">4.5</span>
 			</div>
-			<div class="box2">2</div>
-			<div class="box3">3</div>
+			<div class="box2">
+				<p><a href="./myPointCarge">포인트 충전 ></a></p>
+				<span>1,0000P </span> <img src="/assets/images/ico_point.png">
+			</div>
+			<div class="box3">
+				<p><a href="./myCouponMain">쿠폰 사용 ></a></p>
+				<span>2개 </span> <img src="/assets/images/ico_coupon.png">
+			</div>
 		</nav>
 
 		<!-- //myPage main contents -->
 		<main class="contents">
 
-			<!-- //sideNav  -->
+		<!-- //sideNav  -->
 			<nav class="myPage_sideNav">
 				<h2>마이페이지</h2>
 				<!-- h2? -->
 				<ul class="myPage_list">
-					<li><a href="javascript:void(0);">드라이버 신청/정보</a></li>
-					<li><a href="javascript:void(0);">이용 내역</a></li>
-					<li><a href="javascript:void(0);">예약 내역</a></li>
-					<li><a href="javascript:void(0);">문의 내역</a></li>
-					<li><a href="./myPointMain2">포인트</a></li>
-					<li><a href="./myCouponMain">쿠폰</a></li>
-					<li><a href="./myPointRefundMain">환불 내역</a></li>
-					<li class="myPage_list_last"><a href="javascript:void(0);">개인정보 수정</a></li>
+					<li><a href="javascript:void(0);">드라이버 신청/정보<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="javascript:void(0);">이용 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="javascript:void(0);">예약 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="javascript:void(0);">문의 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="./myPointMain">포인트<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="./myCouponMain">쿠폰<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="./myPointRefundMain">환불 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li class="myPage_list_last"><a href="javascript:void(0);">개인정보 수정<img src="/assets/images/chevron-right-blue.png"></a></li>
 				</ul>
 			</nav>
+
 
 			<!-- //section -->
 			<section class="myPage_selection">
@@ -75,18 +86,14 @@
 							<!-- <label for="lecture">유형</label> -->
 							<select id="option1" class="form-select" aria-label="Default select example">
 								<option value=selected>유형</option>
-								<option value="1">카풀정기권</option>
-								<option value="2">히치하이크</option>
-								<option value="3">메이트</option>
-								<option value="4">카풀1회성</option>
-								<option value="5"><span style="color: red">패널티</span></option>
+								<option value="1">주유권</option>
 							</select>
 
-							<!-- <label for="lecture">참여주체</label> -->
+							<!-- <label for="lecture">사용여부</label> -->
 							<select id="option1" class="form-select" aria-label="Default select example">
-								<option value=selected>참여주체</option>
-								<option value="1">드라이버</option>
-								<option value="2">탑승자</option>
+								<option value=selected>사용여부</option>
+								<option value="1">미사용</option>
+								<option value="2">사용완료</option>
 							</select>
 							<div class="btns">
 								<button type="button" class="myPage_btnB">조회하기</button>
@@ -106,7 +113,7 @@
 								<th>번호</th>
 								<th>구매날짜</th>
 								<th>사용내역</th>
-								<th>구폰금액</th>
+								<th>쿠폰금액</th>
 								<th>사용여부</th>
 							</tr>
 						</thead>
@@ -123,7 +130,7 @@
 								<td>2022.07.26</td>
 								<td>S-oil 에쓰오일 서울대입구역점</td>
 								<td>+3,000P</td>
-								<td>미사용</td>
+								<td>사용완료</td>
 							</tr>
 							<tr>
 								<td>3</td>
@@ -137,52 +144,78 @@
 								<td>2022.07.26</td>
 								<td>S-oil 에쓰오일 서울대입구역점</td>
 								<td>+3,000P</td>
-								<td>미사용</td>
+								<td>사용완료</td>
 							</tr>
 							<tr>
 								<td>5</td>
 								<td>2022.07.26</td>
 								<td>S-oil 에쓰오일 서울대입구역점</td>
 								<td>+3,000P</td>
-								<td>미사용</td>
+								<td>사용완료</td>
 							</tr>
 							<tr>
 								<td>6</td>
 								<td>2022.07.26</td>
 								<td>S-oil 에쓰오일 서울대입구역점</td>
 								<td>+3,000P</td>
-								<td>미사용</td>
+								<td>사용완료</td>
 							</tr>
 							<tr>
 								<td>7</td>
 								<td>2022.07.26</td>
 								<td>S-oil 에쓰오일 서울대입구역점</td>
 								<td>+3,000P</td>
-								<td>미사용</td>
+								<td>사용완료</td>
 							</tr>
 							<tr>
 								<td>8</td>
 								<td>2022.07.26</td>
 								<td>S-oil 에쓰오일 서울대입구역점</td>
 								<td>+3,000P</td>
-								<td>미사용</td>
+								<td>사용완료</td>
 							</tr>
 							<tr>
 								<td>9</td>
 								<td>2022.07.26</td>
 								<td>S-oil 에쓰오일 서울대입구역점</td>
 								<td>+3,000P</td>
-								<td>미사용</td>
+								<td>사용완료</td>
 							</tr>
 							<tr>
 								<td>10</td>
 								<td>2022.07.26</td>
 								<td>S-oil 에쓰오일 서울대입구역점</td>
 								<td>+3,000P</td>
-								<td>미사용</td>
+								<td>사용완료</td>
 							</tr>
 						</tbody>
 					</table>
+					<div class="paging">
+						<ul>
+							<li><a href=""> <img class="myPage_PagePicto" src="/assets/images/chevron-double-left.png">
+							</a></li>
+
+							<li><a href=""> <img class="myPage_PagePicto" src="/assets/images/chevron-left.png">
+							</a></li>
+
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li class="active"><a href="">5</a></li>
+							<li><a href="">6</a></li>
+							<li><a href="">7</a></li>
+							<li><a href="">8</a></li>
+							<li><a href="">9</a></li>
+							<li><a href="">10</a></li>
+
+							<li><a href=""> <img class="myPage_PagePicto" src="/assets/images/chevron-right.png">
+							</a></li>
+
+							<li><a href=""> <img class="myPage_PagePicto" src="/assets/images/chevron-double-right.png">
+							</a></li>
+						</ul>
+					</div>
 
 				</article>
 			</section>

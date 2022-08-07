@@ -27,10 +27,20 @@
 		<!-- //topNav -->
 		<nav class="myPage_topNav">
 			<div class="box1">
-				<h2>yujieun님</h2>
+				<div class="box1_box">
+					<img src="/assets/images/box_user.png">
+				</div>
+				<p>yujieun님</p>
+				<span>Reviews</span><span><img src="/assets/images/ico_star.png">4.5</span>
 			</div>
-			<div class="box2">2</div>
-			<div class="box3">3</div>
+			<div class="box2">
+				<p><a href="./myPointCarge">포인트 충전 ></a></p>
+				<span>1,0000P </span> <img src="/assets/images/ico_point.png">
+			</div>
+			<div class="box3">
+				<p><a href="./myCouponMain">쿠폰 사용 ></a></p>
+				<span>2개 </span> <img src="/assets/images/ico_coupon.png">
+			</div>
 		</nav>
 
 		<!-- //myPage main contents -->
@@ -41,16 +51,17 @@
 				<h2>마이페이지</h2>
 				<!-- h2? -->
 				<ul class="myPage_list">
-					<li><a href="javascript:void(0);">드라이버 신청/정보</a></li>
-					<li><a href="javascript:void(0);">이용 내역</a></li>
-					<li><a href="javascript:void(0);">예약 내역</a></li>
-					<li><a href="javascript:void(0);">문의 내역</a></li>
-					<li><a href="./myPointMain2">포인트</a></li>
-					<li><a href="./myCouponMain">쿠폰</a></li>
-					<li><a href="./myPointRefundMain">환불 내역</a></li>
-					<li class="myPage_list_last"><a href="javascript:void(0);">개인정보 수정</a></li>
+					<li><a href="javascript:void(0);">드라이버 신청/정보<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="javascript:void(0);">이용 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="javascript:void(0);">예약 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="javascript:void(0);">문의 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="./myPointMain">포인트<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="./myCouponMain">쿠폰<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="./myPointRefundMain">환불 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li class="myPage_list_last"><a href="javascript:void(0);">개인정보 수정<img src="/assets/images/chevron-right-blue.png"></a></li>
 				</ul>
 			</nav>
+
 
 			<!-- //section -->
 			<section class="myPage_selection">
@@ -70,23 +81,20 @@
 
 					<div class="inputBox">
 						<form>
-							<input type="date" value="2022-08-02"> <span> - </span> <input type="date" value="2022-08-02">
+							<input type="text" value="" placeholder="금액설정"> <span> - </span> <input type="text" value="" placeholder="금액설정">
 
 							<!-- <label for="lecture">유형</label> -->
 							<select id="option1" class="form-select" aria-label="Default select example">
 								<option value=selected>유형</option>
-								<option value="1">카풀정기권</option>
-								<option value="2">히치하이크</option>
-								<option value="3">메이트</option>
-								<option value="4">카풀1회성</option>
-								<option value="5"><span style="color: red">패널티</span></option>
+								<option value="1">주유권</option>
+
 							</select>
 
 							<!-- <label for="lecture">참여주체</label> -->
 							<select id="option1" class="form-select" aria-label="Default select example">
-								<option value=selected>참여주체</option>
-								<option value="1">드라이버</option>
-								<option value="2">탑승자</option>
+								<option value=selected>브랜드</option>
+								<option value="1">S-OIL</option>
+								<option value="2">GS-칼텍스</option>
 							</select>
 							<div class="btns">
 								<button type="button" class="myPage_btnB">조회하기</button>
@@ -101,18 +109,12 @@
 				<article class="myPage_article2">
 					<h4>모바일 주유권</h4>
 					<div class="myCoupon">
-						<div class="coupon1"></div>
-						<div class="coupon2"></div>
-						<div class="coupon3"></div>
-						<div class="coupon4"></div>
-						<div class="coupon5"></div>
-						<div class="coupon6"></div>
-						<div class="coupon7"></div>
-						<div class="coupon8"></div>
-						<div class="coupon9"></div>
-						<div class="coupon10"></div>
-						<div class="coupon11"></div>
-						<div class="coupon12"></div>
+
+						<a href="./myCouponUse"><img src="/assets/images/soil_3.png"></a> <a href="./myCouponUse"><img src="/assets/images/soil_5.png"></a> <a href="./myCouponUse"><img
+							src="/assets/images/soil_10.png"></a> <a href="./myCouponUse"><img src="/assets/images/soil_30.png"></a> <a href="./myCouponUse"><img src="/assets/images/soil_50.png"></a> <a
+							href="./myCouponUse"><img src="/assets/images/soil_100.png"></a> <a href="./myCouponUse"><img src="/assets/images/gs_3.png"></a> <a href="./myCouponUse"><img
+							src="/assets/images/gs_5.png"></a> <a href="./myCouponUse"><img src="/assets/images/gs_10.png"></a> <a href="./myCouponUse"><img src="/assets/images/gs_30.png"></a> <a
+							href="./myCouponUse"><img src="/assets/images/gs_50.png"></a> <a href="./myCouponUse"><img src="/assets/images/gs_100.png"></a>
 					</div>
 				</article>
 			</section>

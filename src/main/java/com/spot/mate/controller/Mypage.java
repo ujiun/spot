@@ -8,20 +8,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping(value = "/member/*")
 public class Mypage {
 
-	//myPointMain
-	@RequestMapping(value = "/myPointMain", method = RequestMethod.GET)
-	public String myPointMain() {
-		System.out.println("myPointMain");
 
-		return "mypageJ/myPointMain";
-	}
 
 	
-	//myPointMain 레이아웃 다시
-	@RequestMapping(value = "/myPointMain2", method = RequestMethod.GET)
+	//myPointMain
+	@RequestMapping(value = "/myPointMain", method = RequestMethod.GET)
 	public String myPointMain2() {
 		
-		return "mypageJ/myPointMain2";
+		return "mypageJ/myPointMain";
 	}
 	
 	//myPointCarge

@@ -21,16 +21,26 @@
 
 	<div id="wrap">
 
-<!-- //header -->
+		<!-- //header -->
 		<c:import url="/WEB-INF/views/includes/header.jsp"></c:import>
 
 		<!-- //topNav -->
 		<nav class="myPage_topNav">
 			<div class="box1">
-				<h2>yujieun님</h2>
+				<div class="box1_box">
+					<img src="/assets/images/box_user.png">
+				</div>
+				<p>yujieun님</p>
+				<span>Reviews</span><span><img src="/assets/images/ico_star.png">4.5</span>
 			</div>
-			<div class="box2">2</div>
-			<div class="box3">3</div>
+			<div class="box2">
+				<p><a href="./myPointCarge">포인트 충전 ></a></p>
+				<span>1,0000P </span> <img src="/assets/images/ico_point.png">
+			</div>
+			<div class="box3">
+				<p><a href="./myCouponMain">쿠폰 사용 ></a></p>
+				<span>2개 </span> <img src="/assets/images/ico_coupon.png">
+			</div>
 		</nav>
 
 		<!-- //myPage main contents -->
@@ -41,16 +51,17 @@
 				<h2>마이페이지</h2>
 				<!-- h2? -->
 				<ul class="myPage_list">
-					<li><a href="javascript:void(0);">드라이버 신청/정보</a></li>
-					<li><a href="javascript:void(0);">이용 내역</a></li>
-					<li><a href="javascript:void(0);">예약 내역</a></li>
-					<li><a href="javascript:void(0);">문의 내역</a></li>
-					<li><a href="./myPointMain2">포인트</a></li>
-					<li><a href="./myCouponMain">쿠폰</a></li>
-					<li><a href="./myPointRefundMain">환불 내역</a></li>
-					<li class="myPage_list_last"><a href="javascript:void(0);">개인정보 수정</a></li>
+					<li><a href="javascript:void(0);">드라이버 신청/정보<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="javascript:void(0);">이용 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="javascript:void(0);">예약 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="javascript:void(0);">문의 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="./myPointMain">포인트<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="./myCouponMain">쿠폰<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="./myPointRefundMain">환불 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li class="myPage_list_last"><a href="javascript:void(0);">개인정보 수정<img src="/assets/images/chevron-right-blue.png"></a></li>
 				</ul>
 			</nav>
+
 
 			<!-- //section -->
 			<section class="myPage_selection">
@@ -85,7 +96,7 @@
 							<!-- <label for="lecture">참여주체</label> -->
 							<select id="option1" class="form-select" aria-label="Default select example">
 								<option value=selected>처리상태</option>
-								<option value="1">환불예정</option>
+								<option value="1">환불대기</option>
 								<option value="2">환불완료</option>
 							</select>
 							<div class="btns">
@@ -100,7 +111,7 @@
 				<!-- //section-article2 -->
 				<article class="myPage_article2">
 					<h4>환불 내역</h4>
-					<table>
+					<table class="RefundAsk">
 						<thead>
 							<tr>
 								<th>번호</th>
@@ -118,9 +129,9 @@
 								<td>카풀 정기권</td>
 								<td>2022.07.26</td>
 								<td>카카오뱅크 1002-***-222256</td>
-								<td>환불대기</td>
+								<td>환불완료</td>
 								<td>3,000P</td>
-								<td>문의</td>
+								<td><a class="myPage_RefundAsk" ><span>문의</span></a></td>
 							</tr>
 							<tr>
 								<td>2</td>
@@ -129,16 +140,16 @@
 								<td>카카오뱅크 1002-***-222256</td>
 								<td>환불대기</td>
 								<td>3,000P</td>
-								<td>문의</td>
+								<td><a class="myPage_RefundAsk" ><span>문의</span></a></td>
 							</tr>
 							<tr>
 								<td>3</td>
 								<td>카풀 정기권</td>
 								<td>2022.07.26</td>
 								<td>카카오뱅크 1002-***-222256</td>
-								<td>환불대기</td>
+								<td>환불완료</td>
 								<td>3,000P</td>
-								<td>문의</td>
+								<td><a class="myPage_RefundAsk" ><span>문의</span></a></td>
 							</tr>
 							<tr>
 								<td>4</td>
@@ -147,7 +158,7 @@
 								<td>카카오뱅크 1002-***-222256</td>
 								<td>환불대기</td>
 								<td>3,000P</td>
-								<td>문의</td>
+								<td><a class="myPage_RefundAsk" ><span>문의</span></a></td>
 							</tr>
 							<tr>
 								<td>5</td>
@@ -156,7 +167,7 @@
 								<td>카카오뱅크 1002-***-222256</td>
 								<td>환불대기</td>
 								<td>3,000P</td>
-								<td>문의</td>
+								<td><a class="myPage_RefundAsk" ><span>문의</span></a></td>
 							</tr>
 							<tr>
 								<td>6</td>
@@ -165,7 +176,7 @@
 								<td>카카오뱅크 1002-***-222256</td>
 								<td>환불대기</td>
 								<td>3,000P</td>
-								<td>문의</td>
+								<td><a class="myPage_RefundAsk" ><span>문의</span></a></td>
 							</tr>
 							<tr>
 								<td>7</td>
@@ -174,7 +185,7 @@
 								<td>카카오뱅크 1002-***-222256</td>
 								<td>환불대기</td>
 								<td>3,000P</td>
-								<td>문의</td>
+								<td><a class="myPage_RefundAsk" ><span>문의</span></a></td>
 							</tr>
 							<tr>
 								<td>8</td>
@@ -183,7 +194,7 @@
 								<td>카카오뱅크 1002-***-222256</td>
 								<td>환불대기</td>
 								<td>3,000P</td>
-								<td>문의</td>
+								<td><a class="myPage_RefundAsk" ><span>문의</span></a></td>
 							</tr>
 							<tr>
 								<td>9</td>
@@ -192,7 +203,7 @@
 								<td>카카오뱅크 1002-***-222256</td>
 								<td>환불대기</td>
 								<td>3,000P</td>
-								<td>문의</td>
+								<td><a class="myPage_RefundAsk" ><span>문의</span></a></td>
 							</tr>
 							<tr>
 								<td>10</td>
@@ -201,17 +212,42 @@
 								<td>카카오뱅크 1002-***-222256</td>
 								<td>환불대기</td>
 								<td>3,000P</td>
-								<td>문의</td>
+								<td><a class="myPage_RefundAsk" ><span>문의</span></a></td>
 							</tr>
 						</tbody>
 					</table>
+					<div class="paging">
+						<ul>
+							<li><a href=""> <img class="myPage_PagePicto" src="/assets/images/chevron-double-left.png">
+							</a></li>
 
+							<li><a href=""> <img class="myPage_PagePicto" src="/assets/images/chevron-left.png">
+							</a></li>
+
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li class="active"><a href="">5</a></li>
+							<li><a href="">6</a></li>
+							<li><a href="">7</a></li>
+							<li><a href="">8</a></li>
+							<li><a href="">9</a></li>
+							<li><a href="">10</a></li>
+
+							<li><a href=""> <img class="myPage_PagePicto" src="/assets/images/chevron-right.png">
+							</a></li>
+
+							<li><a href=""> <img class="myPage_PagePicto" src="/assets/images/chevron-double-right.png">
+							</a></li>
+						</ul>
+					</div>
 				</article>
 			</section>
 		</main>
 
 
-<!-- //banner & footer -->
+		<!-- //banner & footer -->
 		<c:import url="/WEB-INF/views/includes/footer.jsp"></c:import>
 
 	</div>

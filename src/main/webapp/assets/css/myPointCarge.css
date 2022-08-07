@@ -28,12 +28,13 @@
 	padding: 20px 0px 45px 0px;
 	margin-left: 30px;
 }
+
 .cargeEx>p {
-    color: rgba(68,65,80,1);
-    font-family: Noto Sans;
-    font-weight: Regular;
-    font-size: 16px;
-    opacity: 0.5;
+	color: rgba(68, 65, 80, 1);
+	font-family: Noto Sans;
+	font-weight: Regular;
+	font-size: 16px;
+	opacity: 0.5;
 }
 
 /*무통장입금 입금자명 글자*/
@@ -56,13 +57,12 @@
 	margin-left: 30px;
 }
 
-
 /*충전버튼*/
-
-.myPage_pointCarge > .myPage_btnB {
+.myPage_pointCarge>.myPage_btnB {
 	width: 553px;
 	height: 63px;
-	border-radius: 4px;
+	font-size: 24px; 
+	border-radius : 4px;
 	margin: 50px 0px 0px 30px;
-	
+	border-radius: 4px;
 }

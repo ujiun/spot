@@ -27,10 +27,20 @@
 		<!-- //topNav -->
 		<nav class="myPage_topNav">
 			<div class="box1">
-				<h2>yujieun님</h2>
+				<div class="box1_box">
+					<img src="/assets/images/box_user.png">
+				</div>
+				<p>yujieun님</p>
+				<span>Reviews</span><span><img src="/assets/images/ico_star.png">4.5</span>
 			</div>
-			<div class="box2">2</div>
-			<div class="box3">3</div>
+			<div class="box2">
+				<p><a href="./myPointCarge">포인트 충전 ></a></p>
+				<span>1,0000P </span> <img src="/assets/images/ico_point.png">
+			</div>
+			<div class="box3">
+				<p><a href="./myCouponMain">쿠폰 사용 ></a></p>
+				<span>2개 </span> <img src="/assets/images/ico_coupon.png">
+			</div>
 		</nav>
 
 		<!-- //myPage main contents -->
@@ -41,16 +51,17 @@
 				<h2>마이페이지</h2>
 				<!-- h2? -->
 				<ul class="myPage_list">
-					<li><a href="javascript:void(0);">드라이버 신청/정보</a></li>
-					<li><a href="javascript:void(0);">이용 내역</a></li>
-					<li><a href="javascript:void(0);">예약 내역</a></li>
-					<li><a href="javascript:void(0);">문의 내역</a></li>
-					<li><a href="./myPointMain2">포인트</a></li>
-					<li><a href="./myCouponMain">쿠폰</a></li>
-					<li><a href="./myPointRefundMain">환불 내역</a></li>
-					<li class="myPage_list_last"><a href="javascript:void(0);">개인정보 수정</a></li>
+					<li><a href="javascript:void(0);">드라이버 신청/정보<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="javascript:void(0);">이용 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="javascript:void(0);">예약 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="javascript:void(0);">문의 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="./myPointMain">포인트<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="./myCouponMain">쿠폰<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="./myPointRefundMain">환불 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li class="myPage_list_last"><a href="javascript:void(0);">개인정보 수정<img src="/assets/images/chevron-right-blue.png"></a></li>
 				</ul>
 			</nav>
+
 
 			<!-- //section -->
 			<section class="myPage_selection">
@@ -70,27 +81,25 @@
 
 					<div class="inputBox">
 						<form>
-							<input type="date" value="2022-08-02"> <span> - </span> <input type="date" value="2022-08-02">
+							<input type="text" value="" placeholder="금액설정"> <span> - </span> <input type="text" value="" placeholder="금액설정">
 
 							<!-- <label for="lecture">유형</label> -->
 							<select id="option1" class="form-select" aria-label="Default select example">
 								<option value=selected>유형</option>
-								<option value="1">카풀정기권</option>
-								<option value="2">히치하이크</option>
-								<option value="3">메이트</option>
-								<option value="4">카풀1회성</option>
-								<option value="5"><span style="color: red">패널티</span></option>
+								<option value="1">주유권</option>
+
 							</select>
 
 							<!-- <label for="lecture">참여주체</label> -->
 							<select id="option1" class="form-select" aria-label="Default select example">
 								<option value=selected>브랜드</option>
-								<option value="1">드라이버</option>
-								<option value="2">탑승자</option>
+								<option value="1">S-OiL</option>
+								<option value="2">GS-칼텍스</option>
 							</select>
 							<div class="btns">
-								<button type="button" class="myPage_btnB">조회하기</button>
-								<a href="./myPointCarge"><button type="button" class="myPage_btnY">포인트 충전하기</button></a>
+								<a href="./myCouponBuy">
+									<button type="button" class="myPage_btnB">조회하기</button>
+								</a> <a href="./myPointCarge"><button type="button" class="myPage_btnY">포인트 충전하기</button></a>
 							</div>
 						</form>
 					</div>
@@ -102,11 +111,29 @@
 					<h4>모바일 주유권</h4>
 					<div class="myPage_couponUse">
 						<div class="myPage_coupon"></div>
-						<div class="myPage_couponEx"></div>
-						<div class="myPage_mapSearch">fsdf</div>
-						<div class="myPage_map">fsdf</div>
-						<div class="myPage_mapAddress">sdfs</div>
-						<div class="myPage_couponExchange">fsdsd</div>
+						<div class="myPage_couponEx">
+							<div>
+								<p>상품설명</p>
+							</div>
+							<ul>
+								<li>✓오프라인 전용상품입니다.</li>
+								<li>✓모바일주유권은 현금교환이 불가합니다.</li>
+								<li>✓모바일주유권 결제시 해당 주유소에서 현금영수증 발행이 가능합니다.</li>
+							</ul>
+						</div>
+						<div class="myPage_mapSearch">
+							<div class="myPage_mapPicto"></div>
+							<span>지도로 이용가능한 매장 찾기</span>
+						</div>
+						<div class="myPage_map"></div>
+						<div class="myPage_mapAddress">
+							<p class="myPage_mapAddress1">주유소</p>
+							<p class="myPage_mapAddress2">관악시몬주유소</p>
+							<p class="myPage_mapAddress3">서울 관악구 남부순환로 1753</p>
+						</div>
+						<div class="myPage_couponExchange">
+							<span>모바일 주유권 교환하기</span>
+						</div>
 					</div>
 
 				</article>
