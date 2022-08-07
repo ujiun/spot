@@ -34,11 +34,15 @@
 				<span>Reviews</span><span><img src="/assets/images/ico_star.png">4.5</span>
 			</div>
 			<div class="box2">
-				<p><a href="./myPointCarge">포인트 충전 ></a></p>
+				<p>
+					<a href="./myPointCarge">포인트 충전 ></a>
+				</p>
 				<span>1,0000P </span> <img src="/assets/images/ico_point.png">
 			</div>
 			<div class="box3">
-				<p><a href="./myCouponMain">쿠폰 사용 ></a></p>
+				<p>
+					<a href="./myCouponMain">쿠폰 사용 ></a>
+				</p>
 				<span>2개 </span> <img src="/assets/images/ico_coupon.png">
 			</div>
 		</nav>
@@ -46,19 +50,19 @@
 		<!-- //myPage main contents -->
 		<main class="contents">
 
-		<!-- //sideNav  -->
+			<!-- //sideNav  -->
 			<nav class="myPage_sideNav">
 				<h2>마이페이지</h2>
 				<!-- h2? -->
 				<ul class="myPage_list">
-					<li><a href="javascript:void(0);">드라이버 신청/정보<img src="/assets/images/chevron-right-blue.png"></a></li>
-					<li><a href="javascript:void(0);">이용 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
-					<li><a href="javascript:void(0);">예약 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
-					<li><a href="javascript:void(0);">문의 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="./myDriverForm">드라이버 신청/정보<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="./myUsageDriverMain">이용 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="./myReservationDriverMain">예약 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="./myQnaMain">문의 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
 					<li><a href="./myPointMain">포인트<img src="/assets/images/chevron-right-blue.png"></a></li>
 					<li><a href="./myCouponMain">쿠폰<img src="/assets/images/chevron-right-blue.png"></a></li>
 					<li><a href="./myPointRefundMain">환불 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
-				<li class="myPage_list_last"><a href="./myInfoChk">개인정보 수정<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li class="myPage_list_last"><a href="./myInfoChk">개인정보 수정<img src="/assets/images/chevron-right-blue.png"></a></li>
 				</ul>
 			</nav>
 

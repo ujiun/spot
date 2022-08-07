@@ -5,15 +5,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="/assets/js/jquery-1.12.4.js"></script>
-<script type="text/javascript" src="/assets/js/swiper.min.js"></script>
-<script type="text/javascript" src="/assets/js/style.js"></script>
+<script type="text/javascript" src="./assets/js/jquery-1.12.4.js"></script>
 
 <link href="${pageContext.request.contextPath}/assets/css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
 <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet" type="text/css">
 
 
-<title>myPointCarge</title>
+<title>myQnaMain</title>
 
 </head>
 
@@ -24,15 +22,14 @@
 		<!-- //header -->
 		<c:import url="/WEB-INF/views/includes/header.jsp"></c:import>
 
-
 		<!-- //topNav -->
 		<nav class="myPage_topNav">
 			<div class="box1">
 				<div class="box1_box">
 					<img src="/assets/images/box_user.png">
 				</div>
-				<p>yujieun님</p>
-				<span>Reviews</span><span><img src="/assets/images/ico_star.png">4.5</span>
+				<p>Ryeo-kyoung,kim님</p>
+				<span>Reviews</span><span><img src="/assets/images/ico_star.png">4.3</span>
 			</div>
 			<div class="box2">
 				<p>
@@ -47,6 +44,7 @@
 				<span>2개 </span> <img src="/assets/images/ico_coupon.png">
 			</div>
 		</nav>
+
 
 		<!-- //myPage main contents -->
 		<main class="contents">
@@ -67,36 +65,73 @@
 				</ul>
 			</nav>
 
-
 			<!-- //section -->
 			<section class="myPage_selection">
 				<!-- //section-header -->
 				<header class="myPage_header">
-					<h3>포인트</h3>
-					<p>나의 포인트 사용과 적립 내역입니다.</p>
+					<h3>문의내역</h3>
+
 					<ul>
-						<li>드라이버 포인트 내역은 주행 완료 후 지급된 포인트입니다.</li>
-						<li>유저 포인트 내역은 다른 드라이버의 차량을 이용 후 사용한 포인트입니다.</li>
-						<li>그 외에도 이용수칙을 위반한 경우 차감 또는 추가 지급 될 수 있습니다.</li>
+						<li>서비스에 대한 문의를 남기는 공간입니다.</li>
+						<li>해당 게시판의 성격과 다른 글은 사전 동의 없이 담당 게시판으로 이동될 수 있습니다.</li>
+						<li>자주하는 질문(FAQ)는 NOTICE 게시판을 확인해주세요.</li>
 					</ul>
 				</header>
 
+				<!-- //section-article -->
+				<article class="myPage_article">
+
+					<div class="inputBox">
+						<form>
+							<input type="date" value="2022-08-02"> <span> ~ </span> <input type="date" value="2022-08-02">
+
+							<!-- <label for="lecture">유형</label> -->
+							<select id="option1" class="form-select" aria-label="Default select example">
+								<option value=selected>유형</option>
+								<option value="1">카풀정기권</option>
+								<option value="2">히치하이크</option>
+								<option value="3">메이트</option>
+								<option value="4">카풀1회성</option>
+								<option value="5"><span style="color: red">패널티</span></option>
+							</select>
+
+							<!-- <label for="lecture">참여주체</label> -->
+							<select id="option1" class="form-select" aria-label="Default select example">
+								<option value=selected>상태</option>
+								<option value="1">답변예정</option>
+								<option value="2">답변완료</option>
+							</select>
+
+							<button type="button" class="myPage_btnB">조회하기</button>
+							<a href="./myPointCarge"><button type="button" class="myPage_btnY">1:1문의하기 ></button></a>
+						</form>
+					</div>
+
+				</article>
+
 				<!-- //section-article2 -->
 				<article class="myPage_article2">
-					<h4>포인트 내역</h4>
-					<div class="myPage_pointCarge">
-						<p class="cargeMoney">충전금액*</p>
-						<input type="text">
-						<div class="cargeEx">
-							<p>1원 = 1Point입니다.</p>
-							<p>포인트는 5,000P부터 1,000P 단위로 충전이 가능합니다.</p>
-						</div>
-						<p>무통장입금 계좌번호</p>
-						<input type="text" placeholder="우리은행:1002-234-000087">
-						<p>입금자명</p>
-						<input type="text" placeholder="ex)입금자분의 성함을 적어주세요">
-						<button class="myPage_btnB">포인트 충전하기</button>
-					</div>
+					<h4></h4>
+					<table>
+
+						<thead>
+							<tr>
+								<th>번호</th>
+								<th>유형</th>
+								<th>날짜</th>
+								<th>제목</th>
+								<th>답변상태</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="T_bottomline" colspan=5 rowspan=5>작성된 문의내역이 없습니다.</td>
+							</tr>
+
+						</tbody>
+
+					</table>
+
 				</article>
 			</section>
 		</main>
@@ -111,4 +146,3 @@
 
 
 </html>
-

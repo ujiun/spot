@@ -51,10 +51,10 @@
 				<h2>마이페이지</h2>
 				<!-- h2? -->
 				<ul class="myPage_list">
-					<li><a href="javascript:void(0);">드라이버 신청/정보<img src="/assets/images/chevron-right-blue.png"></a></li>
-					<li><a href="javascript:void(0);">이용 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
-					<li><a href="javascript:void(0);">예약 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
-					<li><a href="javascript:void(0);">문의 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="./myDriverForm">드라이버 신청/정보<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="./myUsageDriverMain">이용 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="./myReservationDriverMain">예약 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="./myQnaMain">문의 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
 					<li><a href="./myPointMain">포인트<img src="/assets/images/chevron-right-blue.png"></a></li>
 					<li><a href="./myCouponMain">쿠폰<img src="/assets/images/chevron-right-blue.png"></a></li>
 					<li><a href="./myPointRefundMain">환불 내역<img src="/assets/images/chevron-right-blue.png"></a></li>

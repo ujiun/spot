@@ -5,15 +5,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="/assets/js/jquery-1.12.4.js"></script>
-<script type="text/javascript" src="/assets/js/swiper.min.js"></script>
-<script type="text/javascript" src="/assets/js/style.js"></script>
+<script type="text/javascript" src="./assets/js/jquery-1.12.4.js"></script>
 
 <link href="${pageContext.request.contextPath}/assets/css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
 <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet" type="text/css">
 
 
-<title>myPointCarge</title>
+<title>myQnaWriteForm</title>
 
 </head>
 
@@ -24,15 +22,14 @@
 		<!-- //header -->
 		<c:import url="/WEB-INF/views/includes/header.jsp"></c:import>
 
-
 		<!-- //topNav -->
 		<nav class="myPage_topNav">
 			<div class="box1">
 				<div class="box1_box">
 					<img src="/assets/images/box_user.png">
 				</div>
-				<p>yujieun님</p>
-				<span>Reviews</span><span><img src="/assets/images/ico_star.png">4.5</span>
+				<p>Ryeo-kyoung,kim님</p>
+				<span>Reviews</span><span><img src="/assets/images/ico_star.png">4.3</span>
 			</div>
 			<div class="box2">
 				<p>
@@ -67,36 +64,58 @@
 				</ul>
 			</nav>
 
-
 			<!-- //section -->
 			<section class="myPage_selection">
 				<!-- //section-header -->
 				<header class="myPage_header">
-					<h3>포인트</h3>
-					<p>나의 포인트 사용과 적립 내역입니다.</p>
+					<h3>문의내역</h3>
+
 					<ul>
-						<li>드라이버 포인트 내역은 주행 완료 후 지급된 포인트입니다.</li>
-						<li>유저 포인트 내역은 다른 드라이버의 차량을 이용 후 사용한 포인트입니다.</li>
-						<li>그 외에도 이용수칙을 위반한 경우 차감 또는 추가 지급 될 수 있습니다.</li>
+						<li>서비스에 대한 문의를 남기는 공간입니다.</li>
+						<li>해당 게시판의 성격과 다른 글은 사전 동의 없이 담당 게시판으로 이동될 수 있습니다.</li>
+						<li>자주하는 질문(FAQ)는 NOTICE 게시판을 확인해주세요.</li>
 					</ul>
 				</header>
 
-				<!-- //section-article2 -->
+
 				<article class="myPage_article2">
-					<h4>포인트 내역</h4>
-					<div class="myPage_pointCarge">
-						<p class="cargeMoney">충전금액*</p>
+					<h4></h4>
+					<table>
+						<span>유형*</span>
+						<select id="option1" class="form-select" aria-label="Default select example">
+							<option value=selected>문의 유형을 선택해주세요</option>
+							<option value="1">카풀 문의</option>
+							<option value="2">히치하이크 문의</option>
+							<option value="3">메이트 문의</option>
+							<option value="4">드라이버 문의</option>
+							<option value="5">포인트/쿠폰문의</option>
+							<option value="6">기타문의</option>
+
+						</select>
+						<br>
+
+
+
+
+						<span>제목*</span>
 						<input type="text">
-						<div class="cargeEx">
-							<p>1원 = 1Point입니다.</p>
-							<p>포인트는 5,000P부터 1,000P 단위로 충전이 가능합니다.</p>
-						</div>
-						<p>무통장입금 계좌번호</p>
-						<input type="text" placeholder="우리은행:1002-234-000087">
-						<p>입금자명</p>
-						<input type="text" placeholder="ex)입금자분의 성함을 적어주세요">
-						<button class="myPage_btnB">포인트 충전하기</button>
-					</div>
+						<br>
+						<span>내용*</span>
+						<input type="text">
+						<br>
+						<span>이미지</span>
+						<button class="image_buttton">button text</button>
+						<p>* 30MB이상의 이미지만 업로드 가능합니다.</p>
+						<p>* 서비스와 무관한 내용이거나 음란 및 불법적인 내용은 사전 통보없이 삭제될 수 있습니다.</p>
+						<p>* 사진은 최대 8장까지 등록가능합니다.</p>
+
+						<form>
+							<input type="button" class="myQna_enroll" value="등록하기" onclick="msg()">
+						</form>
+
+
+					</table>
+
 				</article>
 			</section>
 		</main>
@@ -111,4 +130,3 @@
 
 
 </html>
-

@@ -5,15 +5,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="/assets/js/jquery-1.12.4.js"></script>
-<script type="text/javascript" src="/assets/js/swiper.min.js"></script>
-<script type="text/javascript" src="/assets/js/style.js"></script>
+<script type="text/javascript" src="./assets/js/jquery-1.12.4.js"></script>
 
 <link href="${pageContext.request.contextPath}/assets/css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
 <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet" type="text/css">
 
 
-<title>myCouponMain</title>
+<title>myReservationUserMain</title>
 
 </head>
 
@@ -30,8 +28,8 @@
 				<div class="box1_box">
 					<img src="/assets/images/box_user.png">
 				</div>
-				<p>yujieun님</p>
-				<span>Reviews</span><span><img src="/assets/images/ico_star.png">4.5</span>
+				<p>Ryeo-kyoung,kim님</p>
+				<span>Reviews</span><span><img src="/assets/images/ico_star.png">4.3</span>
 			</div>
 			<div class="box2">
 				<p>
@@ -46,6 +44,7 @@
 				<span>2개 </span> <img src="/assets/images/ico_coupon.png">
 			</div>
 		</nav>
+
 
 		<!-- //myPage main contents -->
 		<main class="contents">
@@ -66,131 +65,170 @@
 				</ul>
 			</nav>
 
-
 			<!-- //section -->
 			<section class="myPage_selection">
 				<!-- //section-header -->
 				<header class="myPage_header">
-					<h3>쿠폰</h3>
-					<p>나의 쿠폰 사용과 구매 내역입니다.</p>
+					<h3>예약 내역</h3>
+					<p>드라이버와 유저로 구분되어 이용내역이 보이니 하단의 탭을 먼저 선택해주세요.</p>
 					<ul>
-						<li>드라이버 포인트 내역은 주행 완료 후 지급된 포인트입니다.</li>
-						<li>유저 포인트 내역은 다른 드라이버의 차량을 이용 후 사용한 포인트입니다.</li>
-						<li>그 외에도 이용수칙을 위반한 경우 차감 또는 추가 지급 될 수 있습니다.</li>
+						<li>드라이버 예약내역은 서비스를 등록하신 내역입니다.</li>
+						<li>유저 이용 내역은 다른 드라이버의 차량을 이용하기 위해 탑승 대기중인 내역입니다.</li>
 					</ul>
 				</header>
 
-				<!-- //section-article -->
-				<article class="myPage_article">
+				<table>
+					<tr>
+						<div class="topnav">
+							<ul>
+								<li><a href="#news">DRIVER 예약 등록 내역</a></li>
+							</ul>
+							<ul>
+								<li><a class="active" href="#home">USER 예약 신청 내역</a></li>
+							</ul>
+						</div>
 
-					<div class="inputBox">
-						<form>
-							<input type="date" value="2022-08-02"> <span> - </span> <input type="date" value="2022-08-02">
 
-							<!-- <label for="lecture">유형</label> -->
-							<select id="option1" class="form-select" aria-label="Default select example">
-								<option value=selected>유형</option>
-								<option value="1">주유권</option>
-							</select>
+						<!-- //section-article -->
 
-							<!-- <label for="lecture">사용여부</label> -->
-							<select id="option1" class="form-select" aria-label="Default select example">
-								<option value=selected>사용여부</option>
-								<option value="1">미사용</option>
-								<option value="2">사용완료</option>
-							</select>
-							<div class="btns">
-								<button type="button" class="myPage_btnB">조회하기</button>
-								<a href="./myCouponBuy"><button type="button" class="myPage_btnY">쿠폰 구매하기</button></a>
+						<article class="myPage_article">
+
+
+							<div class="inputBox">
+								<form>
+									<input type="date" value="2022-08-02"> <span> ~ </span> <input type="date" value="2022-08-02">
+
+									<!-- <label for="lecture">유형</label> -->
+									<select id="option1" class="form-select" aria-label="Default select example">
+										<option value=selected>유형</option>
+										<option value="1">카풀정기권</option>
+										<option value="2">히치하이크</option>
+										<option value="3">메이트</option>
+										<option value="4">카풀1회성</option>
+										<option value="5"><span style="color: red">패널티</span></option>
+									</select>
+
+									<!-- <label for="lecture">참여주체</label> -->
+									<select id="option1" class="form-select" aria-label="Default select example">
+										<option value=selected>상태</option>
+										<option value="1">탑승대기</option>
+										<option value="2">탑승완료</option>
+									</select>
+
+									<button type="button" class="myPage_btnB">조회하기</button>
+									<a href="./myPointCarge"><button type="button" class="myPage_btnY">등록하러가기 ></button></a>
+								</form>
 							</div>
-						</form>
-					</div>
 
-				</article>
+						</article>
+					</tr>
+				</table>
 
 				<!-- //section-article2 -->
 				<article class="myPage_article2">
-					<h4>쿠폰 사용 내역</h4>
+					<h4>예약 등록 내역</h4>
 					<table>
 						<thead>
 							<tr>
 								<th>번호</th>
-								<th>구매날짜</th>
-								<th>사용내역</th>
-								<th>쿠폰금액</th>
-								<th>사용여부</th>
+								<th>유형</th>
+								<th>날짜</th>
+								<th>출발지</th>
+								<th>도착지</th>
+								<th>지급포인트</th>
+								<th>상태</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>1</td>
+								<td>카풀 정기권</td>
 								<td>2022.07.26</td>
-								<td>S-oil 에쓰오일 서울대입구역점</td>
-								<td>+3,000P</td>
-								<td>미사용</td>
+								<td>출발지</td>
+								<td>도착지</td>
+								<td>+3000</td>
+								<td class="myRDMstate">남은좌석1</td>
 							</tr>
 							<tr>
 								<td>2</td>
+								<td>히치하이크</td>
 								<td>2022.07.26</td>
-								<td>S-oil 에쓰오일 서울대입구역점</td>
-								<td>+3,000P</td>
-								<td>사용완료</td>
+								<td>출발지</td>
+								<td>도착지</td>
+								<td>+10000</td>
+								<td class="myRDMstate">모집완료</td>
 							</tr>
 							<tr>
 								<td>3</td>
+								<td>메이트</td>
 								<td>2022.07.26</td>
-								<td>S-oil 에쓰오일 서울대입구역점</td>
-								<td>+3,000P</td>
-								<td>미사용</td>
+								<td>출발지</td>
+								<td>도착지</td>
+								<td>+5000</td>
+								<td class="myRDMstate">남은좌석</td>
 							</tr>
 							<tr>
 								<td>4</td>
+								<td>카풀1회성</td>
 								<td>2022.07.26</td>
-								<td>S-oil 에쓰오일 서울대입구역점</td>
-								<td>+3,000P</td>
-								<td>사용완료</td>
+								<td>출발지</td>
+								<td>도착지</td>
+								<td>+5000</td>
+								<td class="myRDMstate">모집완료</td>
 							</tr>
 							<tr>
 								<td>5</td>
+								<td>히치하이크</td>
 								<td>2022.07.26</td>
-								<td>S-oil 에쓰오일 서울대입구역점</td>
-								<td>+3,000P</td>
-								<td>사용완료</td>
+								<td>출발지</td>
+								<td>도착지</td>
+								<td>+5000</td>
+								<td class="myRDMstate">모집완료</td>
 							</tr>
 							<tr>
 								<td>6</td>
+								<td>히치하이크</td>
 								<td>2022.07.26</td>
-								<td>S-oil 에쓰오일 서울대입구역점</td>
-								<td>+3,000P</td>
-								<td>사용완료</td>
+								<td>출발지</td>
+								<td>도착지</td>
+								<td>+5000</td>
+								<td class="myRDMstate">모집완료</td>
 							</tr>
 							<tr>
 								<td>7</td>
+								<td>히치하이크</td>
 								<td>2022.07.26</td>
-								<td>S-oil 에쓰오일 서울대입구역점</td>
-								<td>+3,000P</td>
-								<td>사용완료</td>
+								<td>출발지</td>
+								<td>도착지</td>
+								<td>+5000</td>
+								<td class="myRDMstate">모집완료</td>
 							</tr>
 							<tr>
 								<td>8</td>
+								<td>카풀 정기권</td>
 								<td>2022.07.26</td>
-								<td>S-oil 에쓰오일 서울대입구역점</td>
-								<td>+3,000P</td>
-								<td>사용완료</td>
+								<td>출발지</td>
+								<td>도착지</td>
+								<td>+3000</td>
+								<td class="myRDMstate">모집완료</td>
 							</tr>
 							<tr>
 								<td>9</td>
+								<td>카풀 정기권</td>
 								<td>2022.07.26</td>
-								<td>S-oil 에쓰오일 서울대입구역점</td>
-								<td>+3,000P</td>
-								<td>사용완료</td>
+								<td>출발지</td>
+								<td>도착지</td>
+								<td>+5000</td>
+								<td class="myRDMstate">모집완료</td>
 							</tr>
 							<tr>
 								<td>10</td>
+								<td>카풀 정기권</td>
 								<td>2022.07.26</td>
-								<td>S-oil 에쓰오일 서울대입구역점</td>
-								<td>+3,000P</td>
-								<td>사용완료</td>
+								<td>출발지</td>
+								<td>도착지</td>
+								<td>+3000</td>
+								<td class="myRDMstate">모집완료</td>
 							</tr>
 						</tbody>
 					</table>
@@ -220,7 +258,6 @@
 							</a></li>
 						</ul>
 					</div>
-
 				</article>
 			</section>
 		</main>
@@ -235,4 +272,3 @@
 
 
 </html>
-

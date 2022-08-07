@@ -52,10 +52,10 @@
 				<h2>마이페이지</h2>
 				<!-- h2? -->
 				<ul class="myPage_list">
-					<li><a href="javascript:void(0);">드라이버 신청/정보<img src="/assets/images/chevron-right-blue.png"></a></li>
-					<li><a href="javascript:void(0);">이용 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
-					<li><a href="javascript:void(0);">예약 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
-					<li><a href="javascript:void(0);">문의 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="./myDriverForm">드라이버 신청/정보<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="./myUsageDriverMain">이용 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="./myReservationDriverMain">예약 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li><a href="./myQnaMain">문의 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
 					<li><a href="./myPointMain">포인트<img src="/assets/images/chevron-right-blue.png"></a></li>
 					<li><a href="./myCouponMain">쿠폰<img src="/assets/images/chevron-right-blue.png"></a></li>
 					<li><a href="./myPointRefundMain">환불 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
@@ -76,8 +76,21 @@
 
 				<!-- //section-article2 -->
 				<article class="myPage_article2">
-					<div class="myPage_InfoChkPass">dd</div>
-
+					<form action="" class="myPage_InfoChk">
+						<div class="myPage_InfoChkPass">
+							<table class="">
+								<tbody>
+									<tr>
+										<th><label>아이디*</label></th>
+										<td><input type="text"></td>
+										<th><label>패스워드*</label>
+										<td><input type="password"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<button type="submit">확인</button>
+					</form>
 				</article>
 			</section>
 		</main>

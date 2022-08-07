@@ -5,15 +5,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="/assets/js/jquery-1.12.4.js"></script>
-<script type="text/javascript" src="/assets/js/swiper.min.js"></script>
-<script type="text/javascript" src="/assets/js/style.js"></script>
+<script type="text/javascript" src="./assets/js/jquery-1.12.4.js"></script>
 
 <link href="${pageContext.request.contextPath}/assets/css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
 <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet" type="text/css">
 
 
-<title>myPointCarge</title>
+
+<title>myDriverMain</title>
 
 </head>
 
@@ -24,15 +23,14 @@
 		<!-- //header -->
 		<c:import url="/WEB-INF/views/includes/header.jsp"></c:import>
 
-
 		<!-- //topNav -->
 		<nav class="myPage_topNav">
 			<div class="box1">
 				<div class="box1_box">
 					<img src="/assets/images/box_user.png">
 				</div>
-				<p>yujieun님</p>
-				<span>Reviews</span><span><img src="/assets/images/ico_star.png">4.5</span>
+				<p>Ryeo-kyoung,kim님</p>
+				<span>Reviews</span><span><img src="/assets/images/ico_star.png">4.3</span>
 			</div>
 			<div class="box2">
 				<p>
@@ -47,6 +45,7 @@
 				<span>2개 </span> <img src="/assets/images/ico_coupon.png">
 			</div>
 		</nav>
+
 
 		<!-- //myPage main contents -->
 		<main class="contents">
@@ -67,13 +66,12 @@
 				</ul>
 			</nav>
 
-
 			<!-- //section -->
 			<section class="myPage_selection">
 				<!-- //section-header -->
 				<header class="myPage_header">
-					<h3>포인트</h3>
-					<p>나의 포인트 사용과 적립 내역입니다.</p>
+					<h3>드라이버 정보</h3>
+					<span style="font-weight: bold">유저님의 차량 정보 및 상세 조건을 등록/수정하실 수 있습니다.</span>
 					<ul>
 						<li>드라이버 포인트 내역은 주행 완료 후 지급된 포인트입니다.</li>
 						<li>유저 포인트 내역은 다른 드라이버의 차량을 이용 후 사용한 포인트입니다.</li>
@@ -81,34 +79,38 @@
 					</ul>
 				</header>
 
-				<!-- //section-article2 -->
+
 				<article class="myPage_article2">
-					<h4>포인트 내역</h4>
-					<div class="myPage_pointCarge">
-						<p class="cargeMoney">충전금액*</p>
-						<input type="text">
-						<div class="cargeEx">
-							<p>1원 = 1Point입니다.</p>
-							<p>포인트는 5,000P부터 1,000P 단위로 충전이 가능합니다.</p>
-						</div>
-						<p>무통장입금 계좌번호</p>
-						<input type="text" placeholder="우리은행:1002-234-000087">
-						<p>입금자명</p>
-						<input type="text" placeholder="ex)입금자분의 성함을 적어주세요">
-						<button class="myPage_btnB">포인트 충전하기</button>
-					</div>
+
+					<h4>드라이버 정보</h4>
+
+
+
+					<br> <br>
+
+					<p width="300px">아직 등록된 정보가 없습니다.</p>
+
+					<p>드라이버 차량 등록을 신청하고 서비스를 이용해보세요.</p>
+
+
+
+
+
 				</article>
+
+				<a type="button" href="./myDriverForm" target="self" alt="등록하기" class="DForm_enrollbtn"> <span>등록하기</span></a>
+
 			</section>
+
 		</main>
+
 
 
 		<!-- //banner & footer -->
 		<c:import url="/WEB-INF/views/includes/footer.jsp"></c:import>
-
 	</div>
 
 </body>
 
 
 </html>
-
