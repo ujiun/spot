@@ -467,13 +467,11 @@ select {
 }
 
 .myPage_article2 th {
-   padding: 20px 0px 20px 0px;
    background-color: rgba(245, 245, 245, 1);
    border-bottom: 2px solid rgba(245, 245, 245, 1);
 }
 
 .myPage_article2 td {
-   padding: 20px 0px 20px 0px;
    background-color: white;
    border-bottom: 2px solid rgba(245, 245, 245, 1);
 }
