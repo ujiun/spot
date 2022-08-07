@@ -300,6 +300,8 @@
 	padding: 0px 0px 10px 0px;
 }
 
+
+
 /************section-article*****************/
 
 /*myPage_article*/
@@ -401,13 +403,13 @@
 	font-size: 14px;
 }
 
-.myPage_article2 th {
+.myPage_article2 > table > thead > tr> th {
 	padding: 20px 0px 20px 0px;
 	background-color: rgba(245, 245, 245, 1);
 	border-bottom: 1px solid rgba(217, 217, 217, 1);
 }
 
-.myPage_article2 td {
+.myPage_article2 > table > tbody > tr> td {
 	padding: 20px 0px 20px 0px;
 	background-color: white;
 	border-bottom: 1px solid rgba(217, 217, 217, 1);

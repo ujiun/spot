@@ -466,12 +466,12 @@
    text-align: center;
 }
 
-.myPage_article2 th {
+.myPage_article2 > th {
    background-color: rgba(245, 245, 245, 1);
    border-bottom: 2px solid rgba(245, 245, 245, 1);
 }
 
-.myPage_article2 td {
+.myPage_article2 > td {
    background-color: white;
    border-bottom: 2px solid rgba(245, 245, 245, 1);
 }

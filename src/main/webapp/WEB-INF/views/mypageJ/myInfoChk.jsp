@@ -78,18 +78,20 @@
 				<article class="myPage_article2">
 					<form action="" class="myPage_InfoChk">
 						<div class="myPage_InfoChkPass">
-							<table class="">
+							<table class="myPage_InfoChkForm">
 								<tbody>
 									<tr>
 										<th><label>아이디*</label></th>
 										<td><input type="text"></td>
+										</tr>
+										<tr>
 										<th><label>패스워드*</label>
 										<td><input type="password"></td>
 									</tr>
 								</tbody>
 							</table>
 						</div>
-						<button type="submit">확인</button>
+						<button type="submit"><span>확인</span></button>
 					</form>
 				</article>
 			</section>

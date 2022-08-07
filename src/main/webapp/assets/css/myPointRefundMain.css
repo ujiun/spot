@@ -1,20 +1,17 @@
 @charset "UTF-8";
 
-.RefundAsk  td {
-	padding: 0px;
-}
-
 .myPage_RefundAsk {
 	width: 70px;
 	height: 30px;
 	background: rgba(239, 239, 239, 1);
 	display: inline-block; 
 	border-radius : 5px;
-	margin: 14px 0px 14px 0px;
-	border-radius: 5px;
 }
 
 .myPage_RefundAsk span {
 	padding-top: 6px;
 	display: inline-block;
+}
+.myPage_article2 > .RefundAsk > tbody > tr > td {
+	padding: 13px 0px 13px 0px;
 }
