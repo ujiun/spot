@@ -15,5 +15,12 @@
     font-weight: Regular;
     font-size: 14px;
     text-align: left;
-    margin-top: 10px;
+    margin-top: 13px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid rgba(68, 84, 161, 1);
+}
+
+.myPage_article2 .myPage_InfoChkPass {
+   height:300px;
+    border-bottom: 1px solid rgba(217,217,217,1);
 }

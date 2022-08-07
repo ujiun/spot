@@ -218,7 +218,7 @@
 .myPage_list>li {
 	width: 220px;
 	height: 50px;
-	border: 1px solid #a6a6a6;
+	border: 1px solid rgba(217,217,217,1);
 	border-bottom: none;
 }
 
@@ -250,7 +250,7 @@
 
 /*list last*/
 .myPage_list>.myPage_list_last {
-	border-bottom: 1px solid #a6a6a6;
+	border-bottom: 1px solid rgba(217,217,217,1);
 }
 
 /**************************section******************************/

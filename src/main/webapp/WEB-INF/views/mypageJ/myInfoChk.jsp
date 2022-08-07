@@ -59,7 +59,7 @@
 					<li><a href="./myPointMain">포인트<img src="/assets/images/chevron-right-blue.png"></a></li>
 					<li><a href="./myCouponMain">쿠폰<img src="/assets/images/chevron-right-blue.png"></a></li>
 					<li><a href="./myPointRefundMain">환불 내역<img src="/assets/images/chevron-right-blue.png"></a></li>
-					<li class="myPage_list_last"><a href="javascript:void(0);">개인정보 수정<img src="/assets/images/chevron-right-blue.png"></a></li>
+					<li class="myPage_list_last"><a href="./myInfoChk">개인정보 수정<img src="/assets/images/chevron-right-blue.png"></a></li>
 				</ul>
 			</nav>
 
@@ -76,8 +76,7 @@
 
 				<!-- //section-article2 -->
 				<article class="myPage_article2">
-					<h4>포인트 내역</h4>
-
+					<div class="myPage_InfoChkPass">dd</div>
 
 				</article>
 			</section>
