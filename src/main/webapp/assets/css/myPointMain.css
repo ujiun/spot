@@ -319,7 +319,7 @@
 }
 
 /*inputBox 스타일*/
-input {
+.inputBox input {
 	width: 178px;
 	height: 40px;
 	background: rgba(255, 255, 255, 1);
@@ -336,7 +336,7 @@ input {
 	text-align: center;
 }
 
-select {
+.inputBox select {
 	width: 128px;
 	height: 42px;
 	background: rgba(255, 255, 255, 1);
