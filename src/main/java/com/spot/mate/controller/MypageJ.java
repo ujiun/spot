@@ -6,11 +6,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 @RequestMapping(value = "/member/*")
-public class Mypage {
+public class MypageJ {
 
 
-
-	
 	//myPointMain
 	@RequestMapping(value = "/myPointMain", method = RequestMethod.GET)
 	public String myPointMain2() {
@@ -60,4 +58,11 @@ public class Mypage {
 		return "mypageJ/myCouponUse";
 	}
 
+	//myInfoChk
+	@RequestMapping(value = "/myInfoChk", method = RequestMethod.GET)
+	public String myInfoChk() {
+		
+		return "mypageJ/myInfoChk";
+	}
+	
 }

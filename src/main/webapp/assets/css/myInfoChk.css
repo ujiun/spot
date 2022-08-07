@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/*비밀번호 재확인 글자*/
+.myPage_InfoChkEx h4 {
+    color: rgba(81,81,81,1);
+    font-family: Noto Sans;
+    font-weight: SemiBold;
+    font-size: 18px;
+    text-align: left;
+}
+
+.myPage_InfoChkEx p {
+    color: rgba(81,81,81,1);
+    font-family: Noto Sans;
+    font-weight: Regular;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 10px;
+}
