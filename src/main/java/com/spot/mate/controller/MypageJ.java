@@ -1,16 +1,19 @@
 package com.spot.mate.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping(value = "/member/*")
 
 public class MypageJ {
 
-	///////////////////////////지은//////////////////////////////////
-
+	/////////////////////////// 지은//////////////////////////////////
 	// myPointMain
 	@RequestMapping(value = "/myPointMain", method = RequestMethod.GET)
 	public String myPointMain2() {
@@ -67,8 +70,23 @@ public class MypageJ {
 		return "mypageJ/myInfoChk";
 	}
 
-	/////////////////////////// 려경//////////////////////////////////
+	// test
+	@RequestMapping(value = "/testJ", method = RequestMethod.GET)
+	public String test() {
 
+		return "mypageJ/testJ";
+	}
+	
+	//testJ2
+	@GetMapping("/testJ2")
+	public @ResponseBody void testJ2(Long amount ,String buyer) {
+		System.out.println("포인트:" +amount +"원"  + "      구매자:" + buyer);
+		
+	}
+	
+
+	/////////////////////////// 려경//////////////////////////////////
+	
 	@RequestMapping(value = "/myDriverMain", method = RequestMethod.GET)
 	public String myDriverMain() {
 		System.out.println("드라이버메인");
